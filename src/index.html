@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>유효성 검사</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+<div id="container">
+  <h1>회원가입</h1>
+  <fieldset>
+    <label>아이디</label>
+    <input type="text" id="username">
+    <div class="messageText success-message hide">사용할 수 있는 아이디입니다</div>
+    <div class="messageText failure-message hide">4글자 이상 입력하세요</div>
+    
+  </fieldset>
+
+  <fieldset>
+    <label>비밀번호</label>
+    <input type="password" id="password">
+    <div class="messageText enOrNumOrSt1 hide">최소 8자 이상이어야 합니다</div>
+    <div class="messageText enOrNumOrSt2 hide">알파벳과 숫자 및 특수문자(@$!%*#?&)는 하나 이상 포함되어야 합니다</div>
+  </fieldset>
+
+  <fieldset>
+    <label>비밀번호 확인</label>
+    <input type="password" id="password-retype">
+    <div class="messageText mismatch-message hide">비밀번호가 일치하지 않습니다</div>
+  </fieldset>
+
+  <fieldset>
+    <button>회원가입</button>
+  </fieldset>
+</div>
+  <script src="script.js"></script>
+  <script src="validator.js"></script>
+</body>
+
+</html>

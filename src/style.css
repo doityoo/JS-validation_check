@@ -1,0 +1,43 @@
+* {
+	margin: 0;
+	padding: 0;
+	/* border: 0; */
+	box-sizing: border-box;
+	/* 레이아웃 리셋 */
+}
+
+.hide {
+	display: none;
+}
+
+body {
+	margin: auto;
+	margin-top: 150px;
+	width: 350px;
+	display: flex;
+	flex-direction: column;
+}
+
+#container {
+	width: 100%;
+	padding: 30px;
+	border-radius: 10px;
+	background-color: rgba(221, 194, 153, 0.876);
+}
+
+fieldset {
+	border: 0;
+	margin: 3px;
+	padding: 5px;
+	text-align: center;
+}
+
+h1 {
+	margin: 20px 0;
+	text-align: center;
+}
+
+.messageText {
+	margin-top: 10px;
+	color: rgb(196, 15, 15);
+}
